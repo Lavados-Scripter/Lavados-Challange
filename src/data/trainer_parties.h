@@ -3326,29 +3326,92 @@ static const struct TrainerMon sParty_BugCatcherRick[] = {
 
 static const struct TrainerMon sParty_BugCatcherDoug[] = {
     {
-        .iv = 0,
-        .lvl = 7,
+        .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),
+        .ev = TRAINER_PARTY_EVS(20, 20, 20, 20, 20, 20),
+        .lvl = 9,
+        .species = SPECIES_CATERPIE,
+        .moves = {MOVE_TACKLE, MOVE_STRING_SHOT, MOVE_NONE, MOVE_NONE}
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(11, 10, 10, 11, 10, 10),
+        .ev = TRAINER_PARTY_EVS(20, 20, 10, 20, 10, 20),
+        .lvl = 9,
         .species = SPECIES_WEEDLE,
+        .moves = {MOVE_POISON_STING, MOVE_STRING_SHOT, MOVE_NONE, MOVE_NONE}
     },
     {
-        .iv = 0,
-        .lvl = 7,
+        .iv = TRAINER_PARTY_IVS(12, 11, 10, 12, 10, 11),
+        .ev = TRAINER_PARTY_EVS(20, 20, 10, 20, 10, 20),
+        .lvl = 10,
+        .species = SPECIES_LEDYBA,
+        .moves = {MOVE_TACKLE, MOVE_SUPERSONIC, MOVE_STRING_SHOT, MOVE_NONE}
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(12, 12, 11, 12, 11, 12),
+        .ev = TRAINER_PARTY_EVS(20, 20, 20, 10, 10, 20),
+        .lvl = 10,
+        .species = SPECIES_PARAS,
+        .moves = {MOVE_SCRATCH, MOVE_STUN_SPORE, MOVE_POISON_POWDER, MOVE_NONE}
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(13, 12, 11, 12, 11, 12),
+        .ev = TRAINER_PARTY_EVS(20, 20, 10, 20, 10, 20),
+        .lvl = 11,
+        .species = SPECIES_WURMPLE,
+        .moves = {MOVE_TACKLE, MOVE_STRING_SHOT, MOVE_POISON_STING, MOVE_NONE}
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(14, 13, 12, 13, 12, 13),
+        .ev = TRAINER_PARTY_EVS(20, 20, 20, 10, 10, 20),
+        .lvl = 11,
         .species = SPECIES_KAKUNA,
-    },
-    {
-        .iv = 0,
-        .lvl = 7,
-        .species = SPECIES_VENONAT,
-    },
+        .moves = {MOVE_HARDEN, MOVE_POISON_STING, MOVE_NONE, MOVE_NONE}
+    }
 };
 
 static const struct TrainerMon sParty_BugCatcherSammy[] = {
     {
-        .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
-        .lvl = 9,
-        .species = SPECIES_BEEDRILL,
-        .moves = {MOVE_POISON_STING, MOVE_STRING_SHOT, MOVE_RAGE, MOVE_NONE},
+        .iv = TRAINER_PARTY_IVS(15, 15, 14, 15, 14, 15),
+        .ev = TRAINER_PARTY_EVS(40, 40, 30, 30, 30, 40),
+        .lvl = 13,
+        .species = SPECIES_BUTTERFREE,
+        .moves = {MOVE_CONFUSION, MOVE_SLEEP_POWDER, MOVE_POISON_POWDER, MOVE_NONE}
     },
+    {
+        .iv = TRAINER_PARTY_IVS(15, 15, 14, 15, 14, 15),
+        .ev = TRAINER_PARTY_EVS(40, 40, 30, 30, 30, 40),
+        .lvl = 13,
+        .species = SPECIES_BEEDRILL,
+        .moves = {MOVE_TWINEEDLE, MOVE_FURY_ATTACK, MOVE_FOCUS_ENERGY, MOVE_NONE}
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(16, 15, 14, 15, 14, 15),
+        .ev = TRAINER_PARTY_EVS(40, 40, 30, 30, 30, 40),
+        .lvl = 14,
+        .species = SPECIES_PINSIR,
+        .moves = {MOVE_VICE_GRIP, MOVE_BIND, MOVE_FOCUS_ENERGY, MOVE_NONE}
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(16, 15, 14, 15, 14, 15),
+        .ev = TRAINER_PARTY_EVS(40, 40, 30, 30, 30, 40),
+        .lvl = 14,
+        .species = SPECIES_YANMA,
+        .moves = {MOVE_SONIC_BOOM, MOVE_QUICK_ATTACK, MOVE_DOUBLE_TEAM, MOVE_NONE}
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(17, 16, 15, 16, 15, 16),
+        .ev = TRAINER_PARTY_EVS(50, 50, 40, 40, 40, 50),
+        .lvl = 14,
+        .species = SPECIES_VOLBEAT,
+        .moves = {MOVE_CONFUSE_RAY, MOVE_TAIL_GLOW, MOVE_QUICK_ATTACK, MOVE_NONE}
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(18, 17, 16, 17, 16, 17),
+        .ev = TRAINER_PARTY_EVS(60, 60, 50, 50, 50, 60),
+        .lvl = 14,
+        .species = SPECIES_SCYTHER,
+        .moves = {MOVE_WING_ATTACK, MOVE_QUICK_ATTACK, MOVE_FOCUS_ENERGY, MOVE_NONE}
+    }
 };
 
 static const struct TrainerMon sParty_BugCatcherColton[] = {
@@ -10720,33 +10783,92 @@ static const struct TrainerMon sParty_Biker2[] = {DUMMY_TRAINER_MON};
 
 static const struct TrainerMon sParty_BugCatcherAnthony[] = {
     {
-        .iv = 0,
-        .lvl = 7,
-        .species = SPECIES_CATERPIE,
+        .iv = TRAINER_PARTY_IVS(12, 12, 11, 12, 11, 12),
+        .ev = TRAINER_PARTY_EVS(20, 20, 20, 20, 20, 20),
+        .lvl = 10,
+        .species = SPECIES_METAPOD,
+        .moves = {MOVE_TACKLE, MOVE_HARDEN, MOVE_NONE, MOVE_NONE}
     },
     {
-        .iv = 0,
-        .lvl = 8,
-        .species = SPECIES_CATERPIE,
+        .iv = TRAINER_PARTY_IVS(13, 12, 11, 13, 11, 12),
+        .ev = TRAINER_PARTY_EVS(20, 20, 10, 20, 10, 20),
+        .lvl = 11,
+        .species = SPECIES_BEEDRILL,
+        .moves = {MOVE_POISON_STING, MOVE_FURY_ATTACK, MOVE_FOCUS_ENERGY, MOVE_NONE}
     },
+    {
+        .iv = TRAINER_PARTY_IVS(13, 12, 12, 13, 12, 12),
+        .ev = TRAINER_PARTY_EVS(20, 20, 20, 10, 10, 20),
+        .lvl = 11,
+        .species = SPECIES_BUTTERFREE,
+        .moves = {MOVE_CONFUSION, MOVE_SLEEP_POWDER, MOVE_TACKLE, MOVE_NONE}
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(14, 13, 12, 13, 12, 13),
+        .ev = TRAINER_PARTY_EVS(20, 20, 10, 20, 10, 20),
+        .lvl = 12,
+        .species = SPECIES_PINSIR,
+        .moves = {MOVE_VICE_GRIP, MOVE_FOCUS_ENERGY, MOVE_BIND, MOVE_NONE}
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(14, 13, 12, 13, 12, 13),
+        .ev = TRAINER_PARTY_EVS(20, 20, 10, 20, 10, 20),
+        .lvl = 12,
+        .species = SPECIES_YANMA,
+        .moves = {MOVE_QUICK_ATTACK, MOVE_SONIC_BOOM, MOVE_DOUBLE_TEAM, MOVE_NONE}
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(15, 14, 13, 14, 13, 14),
+        .ev = TRAINER_PARTY_EVS(20, 20, 20, 20, 20, 20),
+        .lvl = 12,
+        .species = SPECIES_ILLUMISE,
+        .moves = {MOVE_TACKLE, MOVE_CONFUSE_RAY, MOVE_CHARM, MOVE_NONE}
+    }
 };
 
 static const struct TrainerMon sParty_BugCatcherCharlie[] = {
     {
-        .iv = 0,
-        .lvl = 7,
+        .iv = TRAINER_PARTY_IVS(13, 13, 12, 13, 12, 13),
+        .ev = TRAINER_PARTY_EVS(30, 30, 20, 20, 20, 30),
+        .lvl = 11,
         .species = SPECIES_METAPOD,
+        .moves = {MOVE_HARDEN, MOVE_TACKLE, MOVE_NONE, MOVE_NONE}
     },
     {
-        .iv = 0,
-        .lvl = 7,
-        .species = SPECIES_CATERPIE,
+        .iv = TRAINER_PARTY_IVS(14, 13, 12, 14, 12, 13),
+        .ev = TRAINER_PARTY_EVS(30, 30, 20, 20, 20, 30),
+        .lvl = 12,
+        .species = SPECIES_BEEDRILL,
+        .moves = {MOVE_FURY_ATTACK, MOVE_POISON_STING, MOVE_FOCUS_ENERGY, MOVE_NONE}
     },
     {
-        .iv = 0,
-        .lvl = 7,
-        .species = SPECIES_WEEDLE,
+        .iv = TRAINER_PARTY_IVS(14, 13, 13, 14, 13, 13),
+        .ev = TRAINER_PARTY_EVS(30, 30, 20, 20, 20, 30),
+        .lvl = 12,
+        .species = SPECIES_BUTTERFREE,
+        .moves = {MOVE_CONFUSION, MOVE_SLEEP_POWDER, MOVE_POISON_POWDER, MOVE_NONE}
     },
+    {
+        .iv = TRAINER_PARTY_IVS(15, 14, 13, 14, 13, 14),
+        .ev = TRAINER_PARTY_EVS(30, 30, 20, 20, 20, 30),
+        .lvl = 13,
+        .species = SPECIES_PINSIR,
+        .moves = {MOVE_VICE_GRIP, MOVE_BIND, MOVE_FOCUS_ENERGY, MOVE_NONE}
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(15, 14, 13, 14, 13, 14),
+        .ev = TRAINER_PARTY_EVS(30, 30, 20, 20, 20, 30),
+        .lvl = 13,
+        .species = SPECIES_YANMA,
+        .moves = {MOVE_SONIC_BOOM, MOVE_QUICK_ATTACK, MOVE_DOUBLE_TEAM, MOVE_NONE}
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(16, 15, 14, 15, 14, 15),
+        .ev = TRAINER_PARTY_EVS(40, 40, 30, 30, 30, 40),
+        .lvl = 13,
+        .species = SPECIES_VOLBEAT,
+        .moves = {MOVE_CONFUSE_RAY, MOVE_QUICK_ATTACK, MOVE_TAIL_GLOW, MOVE_NONE}
+    }
 };
 
 static const struct TrainerMon sParty_TwinsEliAnne2[] = {
