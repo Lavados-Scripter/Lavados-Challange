@@ -3998,12 +3998,12 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_EEVEE] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 55,
-        .baseDefense   = 50,
+        .baseHP        = 70,
+        .baseAttack    = 65,
+        .baseDefense   = 65,
         .baseSpeed     = 55,
-        .baseSpAttack  = 45,
-        .baseSpDefense = 65,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 70,
         .types = {TYPE_NORMAL, TYPE_NORMAL},
         .catchRate = 200,
         .expYield = 92,
