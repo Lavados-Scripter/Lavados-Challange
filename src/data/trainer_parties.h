@@ -3335,7 +3335,7 @@ static const struct TrainerMon sParty_BugCatcherColton[] = {
     },
     {
         .iv = 0,
-        .lvl = 15,
+        .lvl = 14,
         .species = SPECIES_PINSIR,
     },
 };
