@@ -3079,6 +3079,26 @@ static const struct TrainerMon sParty_YoungsterBen[] = {
         .lvl = 11,
         .species = SPECIES_EKANS,
     },
+    {
+        .iv = 0,
+        .lvl = 12,
+        .species = SPECIES_HOOTHOOT,
+    },
+    {
+        .iv = 0,
+        .lvl = 12,
+        .species = SPECIES_SLUGMA,
+    },
+    {
+        .iv = 0,
+        .lvl = 12,
+        .species = SPECIES_PICHU,
+    },
+    {
+        .iv = 0,
+        .lvl = 15,
+        .species = SPECIES_BULBASAUR,
+    },
 };
 
 static const struct TrainerMon sParty_YoungsterCalvin[] = {
@@ -3238,6 +3258,26 @@ static const struct TrainerMon sParty_BugCatcherRick[] = {
         .lvl = 6,
         .species = SPECIES_CATERPIE,
     },
+    {
+        .iv = 0,
+        .lvl = 8,
+        .species = SPECIES_METAPOD,
+    },
+    {
+        .iv = 0,
+        .lvl = 8,
+        .species = SPECIES_KAKUNA,
+    },
+    {
+        .iv = 0,
+        .lvl = 12,
+        .species = SPECIES_BUTTERFREE,
+    },
+    {
+        .iv = 0,
+        .lvl = 12,
+        .species = SPECIES_BEEDRILL,
+    },
 };
 
 static const struct TrainerMon sParty_BugCatcherDoug[] = {
@@ -3280,8 +3320,23 @@ static const struct TrainerMon sParty_BugCatcherColton[] = {
     },
     {
         .iv = 0,
-        .lvl = 10,
+        .lvl = 12,
+        .species = SPECIES_VENOMOTH,
+    },
+    {
+        .iv = 0,
+        .lvl = 12,
+        .species = SPECIES_BEEDRILL,
+    },
+    {
+        .iv = 0,
+        .lvl = 12,
         .species = SPECIES_BUTTERFREE,
+    },
+    {
+        .iv = 0,
+        .lvl = 15,
+        .species = SPECIES_PINSIR,
     },
 };
 

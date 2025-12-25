@@ -835,7 +835,7 @@ const struct Trainer gTrainers[] = {
         .trainerPic = TRAINER_PIC_YOUNGSTER,
         .trainerName = COMPOUND_STRING("BEN"),
         .doubleBattle = FALSE,
-        .trainerType = TRAINER(.items = {}, .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,),
+        .trainerType = TRAINER(.items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_HYPER_POTION}, .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,),
         .party = TRAINER_PARTY(sParty_YoungsterBen),
     },
     [TRAINER_YOUNGSTER_CALVIN] = {
@@ -986,7 +986,7 @@ const struct Trainer gTrainers[] = {
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .trainerName = COMPOUND_STRING("COLTON"),
         .doubleBattle = FALSE,
-        .trainerType = TRAINER(.items = {}, .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,),
+        .trainerType = TRAINER(.items = {ITEM_SUPER_POTION, ITEM_SUPER_POTION}, .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,),
         .party = TRAINER_PARTY(sParty_BugCatcherColton),
     },
     [TRAINER_BUG_CATCHER_GREG] = {

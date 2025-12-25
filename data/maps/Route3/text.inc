@@ -6,29 +6,29 @@ Route3_Text_TunnelFromCeruleanTiring::
 
 Route3_Text_ColtonIntro::
     .string "Hey!\n"
-    .string "I saw you in VIRIDIAN FOREST!$"
+    .string "Ich habe dich im Vertania Wald gesehen!$"
 
 Route3_Text_ColtonDefeat::
-    .string "You beat me again!$"
+    .string "Du hast mich schon wieder besiegt!$"
 
 Route3_Text_ColtonPostBattle::
-    .string "There are other kinds of POKéMON\n"
-    .string "than the ones you find in forests.$"
+    .string "Es gibt noch andere Arten von POKéMON\n"
+    .string "als die, welche du im Wald fangen konntest.$"
 
 Route3_Text_BenIntro::
     .string "Hi!\n"
-    .string "I like shorts!\p"
-    .string "They're delightfully comfy and\n"
-    .string "easy to wear!$"
+    .string "Warst du auch bei Professor Eich?\p"
+    .string "Ich habe von ihm ein starkes Pokemon\n"
+    .string "erhalten und habe ein gutes Team!$"
 
 Route3_Text_BenDefeat::
-    .string "I don't believe it!$"
+    .string "Niemals! Bisasam ist das stärkste.$"
 
 Route3_Text_BenPostBattle::
-    .string "Are you using a POKéMON CENTER's\n"
-    .string "PC for storing your POKéMON?\p"
-    .string "Each BOX can hold up to\n"
-    .string "30 POKéMON.$"
+    .string "Im Pokemon Center werden deine\n"
+    .string "Pokemon nach dem 6ten aufbewahrt.\p"
+    .string "Die PC Box kann bis zu 30\n"
+    .string "POKéMON beinhalten.$"
 
 Route3_Text_JaniceIntro::
     .string "Excuse me!\n"
