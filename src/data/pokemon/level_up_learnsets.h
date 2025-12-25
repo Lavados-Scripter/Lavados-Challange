@@ -6568,7 +6568,7 @@ static const u16 sRegirockLevelUpLearnset[] = {
 
 static const u16 sRegiceLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_EXPLOSION),
-    LEVEL_UP_MOVE( 1, MOVE_POWDER_SNOW)
+    LEVEL_UP_MOVE( 1, MOVE_POWDER_SNOW),
     LEVEL_UP_MOVE( 9, MOVE_ICY_WIND),
     LEVEL_UP_MOVE(17, MOVE_CURSE),
     LEVEL_UP_MOVE(25, MOVE_AMNESIA),
