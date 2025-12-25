@@ -3281,34 +3281,46 @@ static const struct TrainerMon sParty_YoungsterBen2[] = {
 
 static const struct TrainerMon sParty_BugCatcherRick[] = {
     {
-        .iv = 0,
-        .lvl = 6,
-        .species = SPECIES_WEEDLE,
-    },
-    {
-        .iv = 0,
-        .lvl = 6,
-        .species = SPECIES_CATERPIE,
-    },
-    {
-        .iv = 0,
-        .lvl = 8,
-        .species = SPECIES_METAPOD,
-    },
-    {
-        .iv = 0,
+        .iv = TRAINER_PARTY_IVS(12, 8, 14, 8, 10, 6),
+        .ev = TRAINER_PARTY_EVS(20, 0, 40, 0, 10, 10),
         .lvl = 8,
         .species = SPECIES_KAKUNA,
+        .moves = {MOVE_POISON_STING, MOVE_HARDEN, MOVE_NONE, MOVE_NONE}
     },
     {
-        .iv = 0,
-        .lvl = 12,
+        .iv = TRAINER_PARTY_IVS(13, 13, 12, 12, 11, 10),
+        .ev = TRAINER_PARTY_EVS(20, 20, 10, 20, 10, 10),
+        .lvl = 9,
+        .species = SPECIES_PARAS,
+        .moves = {MOVE_SCRATCH, MOVE_ABSORB, MOVE_STUN_SPORE, MOVE_NONE}
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(12, 10, 12, 11, 12, 10),
+        .ev = TRAINER_PARTY_EVS(20, 10, 20, 10, 20, 10),
+        .lvl = 9,
+        .species = SPECIES_LEDYBA,
+        .moves = {MOVE_TACKLE, MOVE_SUPERSONIC, MOVE_COMET_PUNCH, MOVE_NONE}
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(14, 11, 16, 10, 12, 9),
+        .ev = TRAINER_PARTY_EVS(20, 10, 40, 0, 20, 10),
+        .lvl = 10,
+        .species = SPECIES_PINECO,
+        .moves = {MOVE_TACKLE, MOVE_PROTECT, MOVE_SELF_DESTRUCT, MOVE_NONE}
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(15, 12, 12, 15, 14, 14),
+        .ev = TRAINER_PARTY_EVS(20, 10, 10, 40, 10, 20),
+        .lvl = 11,
         .species = SPECIES_BUTTERFREE,
+        .moves = {MOVE_CONFUSION, MOVE_SLEEP_POWDER, MOVE_STUN_SPORE, MOVE_GUST}
     },
     {
-        .iv = 0,
+        .iv = TRAINER_PARTY_IVS(15, 16, 13, 10, 12, 15),
+        .ev = TRAINER_PARTY_EVS(20, 40, 10, 0, 10, 20),
         .lvl = 12,
         .species = SPECIES_BEEDRILL,
+        .moves = {MOVE_TWINEEDLE, MOVE_FURY_ATTACK, MOVE_FOCUS_ENERGY, MOVE_POISON_STING}
     },
 };
 

@@ -959,7 +959,7 @@ const struct Trainer gTrainers[] = {
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .trainerName = COMPOUND_STRING("RICK"),
         .doubleBattle = FALSE,
-        .trainerType = TRAINER(.items = {}, .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,),
+        .trainerType = TRAINER(.items = {ITEM_SUPER_POTION, ITEM_ANTIDOTE}, .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,),
         .party = TRAINER_PARTY(sParty_BugCatcherRick),
     },
     [TRAINER_BUG_CATCHER_DOUG] = {
