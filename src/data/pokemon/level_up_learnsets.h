@@ -1002,7 +1002,7 @@ static const u16 sPrimeapeLevelUpLearnset[] = {
 
 static const u16 sGrowlitheLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_BITE),
-    LEVEL_UP_MOVE( 1, MOVE_ROAR),
+    LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 7, MOVE_EMBER),
     LEVEL_UP_MOVE(13, MOVE_LEER),
     LEVEL_UP_MOVE(19, MOVE_ODOR_SLEUTH),
@@ -1017,7 +1017,7 @@ static const u16 sGrowlitheLevelUpLearnset[] = {
 
 static const u16 sArcanineLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_BITE),
-    LEVEL_UP_MOVE( 1, MOVE_ROAR),
+    LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 7, MOVE_EMBER),
     LEVEL_UP_MOVE(13, MOVE_LEER),
     LEVEL_UP_MOVE(19, MOVE_ODOR_SLEUTH),
