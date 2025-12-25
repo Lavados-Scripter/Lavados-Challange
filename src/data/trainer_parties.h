@@ -817,45 +817,45 @@ static const struct TrainerMon sParty_RSFisherman[] =
 {    
     {
         .iv = TRAINER_PARTY_IVS(12, 11, 10, 12, 10, 13),
-        .ev = TRAINER_PARTY_EVS(20, 20, 10, 20, 10, 20)
+        .ev = TRAINER_PARTY_EVS(20, 20, 10, 20, 10, 20),
         .lvl = 8,
         .species = SPECIES_PIKACHU,
         .moves = {MOVE_THUNDERBOLT, MOVE_GROWL, MOVE_TAIL_WHIP, MOVE_QUICK_ATTACK}
     },
     {
         .iv = TRAINER_PARTY_IVS(11, 10, 11, 13, 12, 9),
-        .ev = TRAINER_PARTY_EVS(20, 10, 10, 30, 10, 30)
+        .ev = TRAINER_PARTY_EVS(20, 10, 10, 30, 10, 30),
         .lvl = 7,
         .species = SPECIES_ODDISH,
         .moves = {MOVE_ABSORB, MOVE_ACID, MOVE_SWEET_SCENT, MOVE_POISON_POWDER}
     },
     {
         .iv = TRAINER_PARTY_IVS(10, 11, 10, 9, 9, 12),
-        .ev = TRAINER_PARTY_EVS(20, 10, 0, 0, 0, 20)
+        .ev = TRAINER_PARTY_EVS(20, 10, 0, 0, 0, 20),
         .lvl = 6,
         .species = SPECIES_PIDGEY,
         .moves = {MOVE_TACKLE, MOVE_GUST, MOVE_PECK, MOVE_SAND_ATTACK}
     },
     {
         .iv = TRAINER_PARTY_IVS(11, 12, 10, 10, 10, 13),
-        .ev = TRAINER_PARTY_EVS(20, 30, 0, 0, 0, 20)
+        .ev = TRAINER_PARTY_EVS(20, 30, 0, 0, 0, 20),
         .lvl = 7,
         .species = SPECIES_MEOWTH,
         .moves = {MOVE_SCRATCH, MOVE_GROWL, MOVE_BITE, MOVE_SAND_ATTACK}
     },
     {
         .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),
-        .ev = TRAINER_PARTY_EVS(20, 0, 30, 0, 30, 0)
+        .ev = TRAINER_PARTY_EVS(20, 0, 30, 0, 30, 0),
         .lvl = 6,
         .species = SPECIES_CATERPIE,
-        .moves = {MOVE_SCRATCH, MOVE_GROWL, MOVE_BITE, MOVE_SAND_ATTACK}
+        .moves = {MOVE_TACKLE, MOVE_STRING_SHOT, MOVE_CUT, MOVE_SILVER_WIND}
     },
     {
         .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),
-        .ev = TRAINER_PARTY_EVS(20, 0, 30, 0, 30, 0)
+        .ev = TRAINER_PARTY_EVS(30, 10, 30, 0, 30, 0),
         .lvl = 6,
         .species = SPECIES_WURMPLE,
-        .moves = {MOVE_SCRATCH, MOVE_GROWL, MOVE_BITE, MOVE_SAND_ATTACK}
+        .moves = {MOVE_TACKLE, MOVE_STRING_SHOT, MOVE_POISON_STING, MOVE_SILVER_WIND}
     },
 };//Yellow Trainer Bought Back
 
