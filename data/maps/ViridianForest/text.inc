@@ -104,16 +104,11 @@ ViridianForest_Text_LeavingViridianForest::
     .string "PEWTER CITY AHEAD$"
 
 ViridianForest_Text_LassIntro::
-	.string "Hi, do you have a PIKACHU?$"
+	.string "Hey! Nicht so schnell! Meine Pokémon sind auch stark!$"
 
 ViridianForest_Text_LassDefeat::
-	.string "Oh no, really?$"
+	.string "Hä? Schon vorbei?$"
 
 ViridianForest_Text_LassPostBattle::
-	.string "I looked for ages, but I never\n"
-	.string "found a PIKACHU here!\p"
-	.string "I did run into an ODDISH,\n"
-	.string "though.\p"
-	.string "Or was it a BELLSPROUT?\p"
-	.string "I always get their locations\n"
-	.string "mixed up…$"
+	.string "Wenn ich größer bin, werde ich ein \n"
+	.string "Top-Trainer!$"
