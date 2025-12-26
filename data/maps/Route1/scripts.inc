@@ -35,92 +35,94 @@ Route1_EventScript_MartClerk::
 # 18 "data/maps/Route1/scripts.pory"
 	additem ITEM_POTION
 # 19 "data/maps/Route1/scripts.pory"
-	msgbox Route1_Text_PutPotionAway
+	addmoney 2000
 # 20 "data/maps/Route1/scripts.pory"
-	call EventScript_RestorePrevTextColor
+	msgbox Route1_Text_PutPotionAway
 # 21 "data/maps/Route1/scripts.pory"
-	setflag FLAG_GOT_POTION_ON_ROUTE_1
+	call EventScript_RestorePrevTextColor
 # 22 "data/maps/Route1/scripts.pory"
-	release
+	setflag FLAG_GOT_POTION_ON_ROUTE_1
 # 23 "data/maps/Route1/scripts.pory"
-	end
+	release
 # 24 "data/maps/Route1/scripts.pory"
-
+	end
 # 25 "data/maps/Route1/scripts.pory"
-Route1_EventScript_AlreadyGotPotion::
+
 # 26 "data/maps/Route1/scripts.pory"
-	msgbox Route1_Text_ComeSeeUsIfYouNeedPokeBalls
+Route1_EventScript_AlreadyGotPotion::
 # 27 "data/maps/Route1/scripts.pory"
-	release
+	msgbox Route1_Text_ComeSeeUsIfYouNeedPokeBalls
 # 28 "data/maps/Route1/scripts.pory"
-	end
+	release
 # 29 "data/maps/Route1/scripts.pory"
-
+	end
 # 30 "data/maps/Route1/scripts.pory"
-Route1_EventScript_Boy::
+
 # 31 "data/maps/Route1/scripts.pory"
-	msgbox Route1_Text_CanJumpFromLedges, MSGBOX_NPC
+Route1_EventScript_Boy::
 # 32 "data/maps/Route1/scripts.pory"
-	end
+	msgbox Route1_Text_CanJumpFromLedges, MSGBOX_NPC
 # 33 "data/maps/Route1/scripts.pory"
-
+	end
 # 34 "data/maps/Route1/scripts.pory"
-Route1_EventScript_RouteSign::
+
 # 35 "data/maps/Route1/scripts.pory"
-	msgbox Route1_Text_RouteSign, MSGBOX_SIGN
+Route1_EventScript_RouteSign::
 # 36 "data/maps/Route1/scripts.pory"
-	end
+	msgbox Route1_Text_RouteSign, MSGBOX_SIGN
 # 37 "data/maps/Route1/scripts.pory"
-
+	end
 # 38 "data/maps/Route1/scripts.pory"
-Route1_EventScript_Oak::
+
 # 39 "data/maps/Route1/scripts.pory"
-	lock
+Route1_EventScript_Oak::
 # 40 "data/maps/Route1/scripts.pory"
-	faceplayer
+	lock
 # 41 "data/maps/Route1/scripts.pory"
-	msgbox Route1_Text_Oak, MSGBOX_YESNO
+	faceplayer
 # 42 "data/maps/Route1/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, Route1_EventScript_NoOak
+	msgbox Route1_Text_Oak, MSGBOX_YESNO
 # 43 "data/maps/Route1/scripts.pory"
-	setvar VAR_FORCEANIM, 1
+	goto_if_eq VAR_RESULT, NO, Route1_EventScript_NoOak
 # 44 "data/maps/Route1/scripts.pory"
-	trainerbattle_single TRAINER_OAK, Route1_Text_YesOak, Route1_Text_OakDefeat, Route1_EventScript_PostOak, NO_MUSIC
+	setvar VAR_FORCEANIM, 1
 # 45 "data/maps/Route1/scripts.pory"
-	release
+	trainerbattle_single TRAINER_OAK, Route1_Text_YesOak, Route1_Text_OakDefeat, Route1_EventScript_PostOak, NO_MUSIC
 # 46 "data/maps/Route1/scripts.pory"
-	end
+	release
 # 47 "data/maps/Route1/scripts.pory"
-
-# 48 "data/maps/Route1/scripts.pory"
-Route1_EventScript_PostOak::
-# 49 "data/maps/Route1/scripts.pory"
-	setvar VAR_FORCEANIM, 0
-# 50 "data/maps/Route1/scripts.pory"
-	msgbox Route1_Text_OakPostBattle
-# 51 "data/maps/Route1/scripts.pory"
-	setflag FLAG_OAK_DEFEATED
-# 52 "data/maps/Route1/scripts.pory"
-	setflag FLAG_HIDE_OAK
-# 53 "data/maps/Route1/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 54 "data/maps/Route1/scripts.pory"
-	removeobject 3
-# 55 "data/maps/Route1/scripts.pory"
-	fadescreen FADE_FROM_BLACK
-# 56 "data/maps/Route1/scripts.pory"
-	clearflag FLAG_HIDE_OAK_IN_HIS_LAB
-# 57 "data/maps/Route1/scripts.pory"
-	release
-# 58 "data/maps/Route1/scripts.pory"
 	end
-# 59 "data/maps/Route1/scripts.pory"
+# 48 "data/maps/Route1/scripts.pory"
 
-# 60 "data/maps/Route1/scripts.pory"
-Route1_EventScript_NoOak::
-# 61 "data/maps/Route1/scripts.pory"
-	msgbox Route1_Text_NoOak
-# 62 "data/maps/Route1/scripts.pory"
+# 49 "data/maps/Route1/scripts.pory"
+Route1_EventScript_PostOak::
+# 50 "data/maps/Route1/scripts.pory"
+	setvar VAR_FORCEANIM, 0
+# 51 "data/maps/Route1/scripts.pory"
+	msgbox Route1_Text_OakPostBattle
+# 52 "data/maps/Route1/scripts.pory"
+	setflag FLAG_OAK_DEFEATED
+# 53 "data/maps/Route1/scripts.pory"
+	setflag FLAG_HIDE_OAK
+# 54 "data/maps/Route1/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 55 "data/maps/Route1/scripts.pory"
+	removeobject 3
+# 56 "data/maps/Route1/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 57 "data/maps/Route1/scripts.pory"
+	clearflag FLAG_HIDE_OAK_IN_HIS_LAB
+# 58 "data/maps/Route1/scripts.pory"
 	release
+# 59 "data/maps/Route1/scripts.pory"
+	end
+# 60 "data/maps/Route1/scripts.pory"
+
+# 61 "data/maps/Route1/scripts.pory"
+Route1_EventScript_NoOak::
+# 62 "data/maps/Route1/scripts.pory"
+	msgbox Route1_Text_NoOak
 # 63 "data/maps/Route1/scripts.pory"
+	release
+# 64 "data/maps/Route1/scripts.pory"
 	end
