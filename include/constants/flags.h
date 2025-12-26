@@ -540,7 +540,7 @@
 // Viridian City
 #define FLAG_HIDE_VIRIDIAN_CITY_NUGGET                          0x203
 #define FLAG_HIDE_VIRIDIAN_CITY_POKE_BALL               0x204
-#define FLAG_HIDE_VIRIDIAN_CITY_NUGGET               0x205
+#define FLAG_0x205               0x205
 #define FLAG_0x206               0x206
 
 // Viridian Forest new  items
