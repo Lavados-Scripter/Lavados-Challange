@@ -15,15 +15,7 @@ Route1_EventScript_MartClerk::
 	message Text_ObtainedTheX
 	waitmessage
 	waitfanfare
-	additem ITEM_FULL_RESTORE 100
-	additem ITEM_FULL_HEAL
-	additem ITEM_POKE_BALL 200
-	additem ITEM_NET_BALL 20
-	additem ITEM_ORAN_BERRY 20
-	additem ITEM_LUM_BERRY 20
-	additem ITEM_LUCKY_EGG 6
-	additem ITEM_EXP_SHARE 1
-	addmoney 200000
+	additem ITEM_POTION
 	msgbox Route1_Text_PutPotionAway
 	call EventScript_RestorePrevTextColor
 	setflag FLAG_GOT_POTION_ON_ROUTE_1

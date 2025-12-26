@@ -906,7 +906,7 @@ Text_WelcomeWantToHealPkmn::
 
 Text_TakeYourPkmnForFewSeconds::
 	.string "Alles klar!\n"
-	.string "Ich kümmere mich kurz um deine\n"
+	.string "Ich kümmere mich kurz um deine\p"
 	.string "POKéMON.$"
 
 Text_WeHopeToSeeYouAgain::
