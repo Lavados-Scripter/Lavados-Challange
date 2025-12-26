@@ -814,48 +814,54 @@ static const struct TrainerMon sParty_RSYoungCouple[] = {
 
 // Start of actual trainer data
 static const struct TrainerMon sParty_RSFisherman[] = 
-{    
-    {
-        .iv = TRAINER_PARTY_IVS(12, 11, 10, 12, 10, 13),
-        .ev = TRAINER_PARTY_EVS(20, 20, 10, 20, 10, 20),
-        .lvl = 8,
-        .species = SPECIES_PIKACHU,
-        .moves = {MOVE_THUNDER_SHOCK, MOVE_GROWL, MOVE_TAIL_WHIP, MOVE_QUICK_ATTACK}
-    },
+{
     {
         .iv = TRAINER_PARTY_IVS(11, 10, 11, 13, 12, 9),
         .ev = TRAINER_PARTY_EVS(20, 10, 10, 30, 10, 0),
         .lvl = 7,
         .species = SPECIES_ODDISH,
-        .moves = {MOVE_ABSORB, MOVE_SWEET_SCENT, MOVE_POISON_POWDER, MOVE_NONE}
+        .moves = {MOVE_ABSORB, MOVE_SLEEP_POWDER, MOVE_POISON_POWDER, MOVE_ACID}, // Acid als TM Attacke
+        .heldItem = ITEM_ORAN_BERRY
     },
     {
         .iv = TRAINER_PARTY_IVS(10, 11, 10, 9, 9, 12),
         .ev = TRAINER_PARTY_EVS(20, 20, 0, 0, 0, 20),
         .lvl = 6,
         .species = SPECIES_PIDGEY,
-        .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_GUST, MOVE_NONE}
+        .moves = {MOVE_GUST, MOVE_QUICK_ATTACK, MOVE_SAND_ATTACK, MOVE_WHIRLWIND}, // Whirlwind als TM Attacke
+        .heldItem = ITEM_NONE
     },
     {
         .iv = TRAINER_PARTY_IVS(10, 9, 9, 8, 8, 9),
         .ev = TRAINER_PARTY_EVS(30, 0, 10, 0, 10, 0),
         .lvl = 6,
         .species = SPECIES_CATERPIE,
-        .moves = {MOVE_TACKLE, MOVE_STRING_SHOT, MOVE_NONE, MOVE_NONE}
+        .moves = {MOVE_POISON_STING, MOVE_STRING_SHOT, MOVE_TACKLE, MOVE_NONE},
+        .heldItem = ITEM_NONE
     },
     {
         .iv = TRAINER_PARTY_IVS(11, 12, 10, 10, 10, 13),
         .ev = TRAINER_PARTY_EVS(20, 30, 0, 0, 0, 20),
         .lvl = 7,
         .species = SPECIES_MEOWTH,
-        .moves = {MOVE_SCRATCH, MOVE_GROWL, MOVE_BITE, MOVE_NONE}
+        .moves = {MOVE_BITE, MOVE_QUICK_ATTACK, MOVE_GROWL, MOVE_FAKE_OUT}, // Fake Out als frühe TM/Move für Druck
+        .heldItem = ITEM_ORAN_BERRY
     },
     {
         .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),
         .ev = TRAINER_PARTY_EVS(30, 10, 10, 0, 10, 0),
         .lvl = 6,
         .species = SPECIES_WURMPLE,
-        .moves = {MOVE_TACKLE, MOVE_STRING_SHOT, MOVE_POISON_STING, MOVE_NONE}
+        .moves = {MOVE_POISON_STING, MOVE_STRING_SHOT, MOVE_TACKLE, MOVE_NONE},
+        .heldItem = ITEM_NONE
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(12, 11, 10, 12, 10, 13),
+        .ev = TRAINER_PARTY_EVS(20, 20, 10, 20, 10, 20),
+        .lvl = 8,
+        .species = SPECIES_PIKACHU,
+        .moves = {MOVE_THUNDER_SHOCK, MOVE_QUICK_ATTACK, MOVE_TAIL_WHIP, MOVE_THUNDER_WAVE}, // Thunder Wave als TM/Status-Move
+        .heldItem = ITEM_LIGHT_BALL
     },
 };//Yellow Trainer Bought Back
 
@@ -3320,97 +3326,104 @@ static const struct TrainerMon sParty_BugCatcherRick[] = {
         .ev = TRAINER_PARTY_EVS(20, 40, 10, 0, 10, 20),
         .lvl = 12,
         .species = SPECIES_BEEDRILL,
-        .moves = {MOVE_TWINEEDLE, MOVE_FURY_ATTACK, MOVE_FOCUS_ENERGY, MOVE_POISON_STING}
+        .moves = {MOVE_TWINEEDLE, MOVE_FURY_ATTACK, MOVE_FOCUS_ENERGY, MOVE_POISON_STING},
+        .heldItem = ITEM_SILVER_POWDER
     },
 };
 
 static const struct TrainerMon sParty_BugCatcherDoug[] = {
     {
-        .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),
-        .ev = TRAINER_PARTY_EVS(20, 20, 20, 20, 20, 20),
-        .lvl = 9,
-        .species = SPECIES_CATERPIE,
-        .moves = {MOVE_TACKLE, MOVE_STRING_SHOT, MOVE_NONE, MOVE_NONE}
+        .iv = TRAINER_PARTY_IVS(16, 18, 12, 14, 12, 18),
+        .ev = TRAINER_PARTY_EVS(10, 40, 10, 30, 10, 40),
+        .lvl = 11,
+        .species = SPECIES_BUTTERFREE,
+        .moves = {MOVE_CONFUSION, MOVE_SLEEP_POWDER, MOVE_STRING_SHOT, MOVE_PSYCHIC},
+        .heldItem = ITEM_CHESTO_BERRY
     },
     {
-        .iv = TRAINER_PARTY_IVS(11, 10, 10, 11, 10, 10),
-        .ev = TRAINER_PARTY_EVS(20, 20, 10, 20, 10, 20),
-        .lvl = 9,
-        .species = SPECIES_WEEDLE,
-        .moves = {MOVE_POISON_STING, MOVE_STRING_SHOT, MOVE_NONE, MOVE_NONE}
+        .iv = TRAINER_PARTY_IVS(17, 19, 11, 12, 11, 19),
+        .ev = TRAINER_PARTY_EVS(10, 50, 10, 10, 10, 50),
+        .lvl = 11,
+        .species = SPECIES_BEEDRILL,
+        .moves = {MOVE_TWINEEDLE, MOVE_FURY_ATTACK, MOVE_RAGE, MOVE_FOCUS_ENERGY},
+        .heldItem = ITEM_POISON_BARB
     },
     {
-        .iv = TRAINER_PARTY_IVS(12, 11, 10, 12, 10, 11),
-        .ev = TRAINER_PARTY_EVS(20, 20, 10, 20, 10, 20),
-        .lvl = 10,
+        .iv = TRAINER_PARTY_IVS(16, 18, 12, 12, 12, 18),
+        .ev = TRAINER_PARTY_EVS(10, 50, 10, 10, 10, 50),
+        .lvl = 11,
         .species = SPECIES_LEDYBA,
-        .moves = {MOVE_TACKLE, MOVE_SUPERSONIC, MOVE_STRING_SHOT, MOVE_NONE}
+        .moves = {MOVE_COMET_PUNCH, MOVE_SWIFT, MOVE_SUPERSONIC, MOVE_BODY_SLAM},
     },
     {
-        .iv = TRAINER_PARTY_IVS(12, 12, 11, 12, 11, 12),
-        .ev = TRAINER_PARTY_EVS(20, 20, 20, 10, 10, 20),
-        .lvl = 10,
+        .iv = TRAINER_PARTY_IVS(17, 19, 13, 11, 13, 19),
+        .ev = TRAINER_PARTY_EVS(20, 50, 10, 10, 10, 50),
+        .lvl = 12,
         .species = SPECIES_PARAS,
-        .moves = {MOVE_SCRATCH, MOVE_STUN_SPORE, MOVE_POISON_POWDER, MOVE_NONE}
+        .moves = {MOVE_SLASH, MOVE_STUN_SPORE, MOVE_POISON_POWDER, MOVE_LEECH_SEED},
     },
     {
-        .iv = TRAINER_PARTY_IVS(13, 12, 11, 12, 11, 12),
-        .ev = TRAINER_PARTY_EVS(20, 20, 10, 20, 10, 20),
-        .lvl = 11,
-        .species = SPECIES_WURMPLE,
-        .moves = {MOVE_TACKLE, MOVE_STRING_SHOT, MOVE_POISON_STING, MOVE_NONE}
+        .iv = TRAINER_PARTY_IVS(17, 19, 13, 12, 13, 19),
+        .ev = TRAINER_PARTY_EVS(10, 40, 10, 30, 10, 40),
+        .lvl = 12,
+        .species = SPECIES_BEAUTIFLY,
+        .moves = {MOVE_ABSORB, MOVE_GUST, MOVE_STUN_SPORE, MOVE_PSYCHIC},
     },
     {
-        .iv = TRAINER_PARTY_IVS(14, 13, 12, 13, 12, 13),
-        .ev = TRAINER_PARTY_EVS(20, 20, 20, 10, 10, 20),
-        .lvl = 11,
-        .species = SPECIES_KAKUNA,
-        .moves = {MOVE_HARDEN, MOVE_POISON_STING, MOVE_NONE, MOVE_NONE}
+        .iv = TRAINER_PARTY_IVS(18, 20, 14, 12, 14, 20),
+        .ev = TRAINER_PARTY_EVS(20, 80, 20, 20, 20, 80),
+        .lvl = 12,
+        .species = SPECIES_BEEDRILL,
+        .moves = {MOVE_TWINEEDLE, MOVE_FURY_ATTACK, MOVE_RAGE, MOVE_CUT},
+        .heldItem = ITEM_SILVER_POWDER
     }
+
 };
 
 static const struct TrainerMon sParty_BugCatcherSammy[] = {
     {
         .iv = TRAINER_PARTY_IVS(15, 15, 14, 15, 14, 15),
         .ev = TRAINER_PARTY_EVS(40, 40, 30, 30, 30, 40),
-        .lvl = 13,
-        .species = SPECIES_BUTTERFREE,
-        .moves = {MOVE_CONFUSION, MOVE_SLEEP_POWDER, MOVE_POISON_POWDER, MOVE_NONE}
+        .lvl = 12,
+        .species = SPECIES_DUSTOX, // Pudox heißt im Code Dustox
+        .moves = {MOVE_PROTECT, MOVE_GIGA_DRAIN, MOVE_TOXIC, MOVE_SILVER_WIND},
     },
     {
         .iv = TRAINER_PARTY_IVS(15, 15, 14, 15, 14, 15),
         .ev = TRAINER_PARTY_EVS(40, 40, 30, 30, 30, 40),
-        .lvl = 13,
-        .species = SPECIES_BEEDRILL,
-        .moves = {MOVE_TWINEEDLE, MOVE_FURY_ATTACK, MOVE_FOCUS_ENERGY, MOVE_NONE}
+        .lvl = 12,
+        .species = SPECIES_VENOMOTH,
+        .moves = {MOVE_CONFUSION, MOVE_SLEEP_POWDER, MOVE_TOXIC, MOVE_PSYCHIC}, // TM29 Psychic
+        .heldItem = ITEM_LEFTOVERS
     },
     {
         .iv = TRAINER_PARTY_IVS(16, 15, 14, 15, 14, 15),
         .ev = TRAINER_PARTY_EVS(40, 40, 30, 30, 30, 40),
-        .lvl = 14,
+        .lvl = 12,
         .species = SPECIES_PINSIR,
-        .moves = {MOVE_VICE_GRIP, MOVE_BIND, MOVE_FOCUS_ENERGY, MOVE_NONE}
+        .moves = {MOVE_VICE_GRIP, MOVE_BIND, MOVE_FOCUS_ENERGY, MOVE_CUT}
     },
     {
         .iv = TRAINER_PARTY_IVS(16, 15, 14, 15, 14, 15),
         .ev = TRAINER_PARTY_EVS(40, 40, 30, 30, 30, 40),
-        .lvl = 14,
+        .lvl = 12,
         .species = SPECIES_YANMA,
-        .moves = {MOVE_SONIC_BOOM, MOVE_QUICK_ATTACK, MOVE_DOUBLE_TEAM, MOVE_NONE}
-    },
-    {
-        .iv = TRAINER_PARTY_IVS(17, 16, 15, 16, 15, 16),
-        .ev = TRAINER_PARTY_EVS(50, 50, 40, 40, 40, 50),
-        .lvl = 14,
-        .species = SPECIES_VOLBEAT,
-        .moves = {MOVE_CONFUSE_RAY, MOVE_TAIL_GLOW, MOVE_QUICK_ATTACK, MOVE_NONE}
+        .moves = {MOVE_SONIC_BOOM, MOVE_QUICK_ATTACK, MOVE_DOUBLE_TEAM, MOVE_WING_ATTACK},
+        .heldItem = ITEM_CHESTO_BERRY
+    },{
+        .iv = TRAINER_PARTY_IVS(18, 17, 16, 16, 16, 18),
+        .ev = TRAINER_PARTY_EVS(50, 60, 40, 40, 40, 50),
+        .lvl = 12,
+        .species = SPECIES_HERACROSS,
+        .moves = {MOVE_HORN_ATTACK, MOVE_BRICK_BREAK, MOVE_FOCUS_ENERGY, MOVE_DOUBLE_TEAM}
     },
     {
         .iv = TRAINER_PARTY_IVS(18, 17, 16, 17, 16, 17),
         .ev = TRAINER_PARTY_EVS(60, 60, 50, 50, 50, 60),
         .lvl = 14,
         .species = SPECIES_SCYTHER,
-        .moves = {MOVE_WING_ATTACK, MOVE_QUICK_ATTACK, MOVE_FOCUS_ENERGY, MOVE_NONE}
+        .moves = {MOVE_WING_ATTACK, MOVE_QUICK_ATTACK, MOVE_FOCUS_ENERGY, MOVE_CUT},
+        .heldItem = ITEM_SILVER_POWDER
     }
 };
 
@@ -10783,18 +10796,20 @@ static const struct TrainerMon sParty_Biker2[] = {DUMMY_TRAINER_MON};
 
 static const struct TrainerMon sParty_BugCatcherAnthony[] = {
     {
-        .iv = TRAINER_PARTY_IVS(12, 12, 11, 12, 11, 12),
-        .ev = TRAINER_PARTY_EVS(20, 20, 20, 20, 20, 20),
+        .iv = TRAINER_PARTY_IVS(14, 16, 12, 12, 12, 16),
+        .ev = TRAINER_PARTY_EVS(10, 40, 10, 10, 10, 40),
         .lvl = 10,
-        .species = SPECIES_METAPOD,
-        .moves = {MOVE_TACKLE, MOVE_HARDEN, MOVE_NONE, MOVE_NONE}
+        .species = SPECIES_SPINARAK,
+        .moves = {MOVE_STRING_SHOT, MOVE_BITE, MOVE_POISON_STING, MOVE_LEECH_LIFE},
+        .heldItem = ITEM_POISON_BARB
     },
     {
         .iv = TRAINER_PARTY_IVS(13, 12, 11, 13, 11, 12),
         .ev = TRAINER_PARTY_EVS(20, 20, 10, 20, 10, 20),
         .lvl = 11,
         .species = SPECIES_BEEDRILL,
-        .moves = {MOVE_POISON_STING, MOVE_FURY_ATTACK, MOVE_FOCUS_ENERGY, MOVE_NONE}
+        .moves = {MOVE_POISON_STING, MOVE_FURY_ATTACK, MOVE_FOCUS_ENERGY, MOVE_NONE},
+        .heldItem = ITEM_CHESTO_BERRY
     },
     {
         .iv = TRAINER_PARTY_IVS(13, 12, 12, 13, 12, 12),
@@ -10822,52 +10837,57 @@ static const struct TrainerMon sParty_BugCatcherAnthony[] = {
         .ev = TRAINER_PARTY_EVS(20, 20, 20, 20, 20, 20),
         .lvl = 12,
         .species = SPECIES_ILLUMISE,
-        .moves = {MOVE_TACKLE, MOVE_CONFUSE_RAY, MOVE_CHARM, MOVE_NONE}
+        .moves = {MOVE_TACKLE, MOVE_CONFUSE_RAY, MOVE_CHARM, MOVE_NONE},
+        .heldItem = ITEM_SILVER_POWDER
     }
 };
 
 static const struct TrainerMon sParty_BugCatcherCharlie[] = {
     {
-        .iv = TRAINER_PARTY_IVS(13, 13, 12, 13, 12, 13),
-        .ev = TRAINER_PARTY_EVS(30, 30, 20, 20, 20, 30),
+        .iv = TRAINER_PARTY_IVS(16, 18, 12, 14, 12, 18),
+        .ev = TRAINER_PARTY_EVS(10, 50, 10, 10, 10, 50),
+        .lvl = 12,
+        .species = SPECIES_SCYTHER,
+        .moves = {MOVE_FURY_CUTTER, MOVE_QUICK_ATTACK, MOVE_DOUBLE_TEAM, MOVE_AERIAL_ACE}, // TM flight-like / TM39 equivalent
+        .heldItem = ITEM_CHESTO_BERRY
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(15, 17, 12, 12, 12, 17),
+        .ev = TRAINER_PARTY_EVS(10, 50, 10, 10, 10, 50),
         .lvl = 11,
-        .species = SPECIES_METAPOD,
-        .moves = {MOVE_HARDEN, MOVE_TACKLE, MOVE_NONE, MOVE_NONE}
+        .species = SPECIES_SPINARAK,
+        .moves = {MOVE_STRING_SHOT, MOVE_POISON_STING, MOVE_LEECH_LIFE, MOVE_AGILITY}, // Agility TM
+        .heldItem = ITEM_POISON_BARB
     },
     {
-        .iv = TRAINER_PARTY_IVS(14, 13, 12, 14, 12, 13),
-        .ev = TRAINER_PARTY_EVS(30, 30, 20, 20, 20, 30),
+        .iv = TRAINER_PARTY_IVS(16, 18, 13, 12, 13, 18),
+        .ev = TRAINER_PARTY_EVS(20, 50, 10, 10, 10, 50),
         .lvl = 12,
-        .species = SPECIES_BEEDRILL,
-        .moves = {MOVE_FURY_ATTACK, MOVE_POISON_STING, MOVE_FOCUS_ENERGY, MOVE_NONE}
+        .species = SPECIES_SURSKIT,
+        .moves = {MOVE_BUBBLE, MOVE_QUICK_ATTACK, MOVE_STRING_SHOT, MOVE_AGILITY}, // TM-ähnlich: Agility
+        .heldItem = ITEM_CHESTO_BERRY
     },
     {
-        .iv = TRAINER_PARTY_IVS(14, 13, 13, 14, 13, 13),
-        .ev = TRAINER_PARTY_EVS(30, 30, 20, 20, 20, 30),
+        .iv = TRAINER_PARTY_IVS(15, 15, 13, 14, 13, 15),
+        .ev = TRAINER_PARTY_EVS(20, 40, 10, 10, 10, 40),
         .lvl = 12,
-        .species = SPECIES_BUTTERFREE,
-        .moves = {MOVE_CONFUSION, MOVE_SLEEP_POWDER, MOVE_POISON_POWDER, MOVE_NONE}
+        .species = SPECIES_ILLUMISE,
+        .moves = {MOVE_CONFUSE_RAY, MOVE_QUICK_ATTACK, MOVE_TAIL_GLOW, MOVE_PROTECT}, // TM17 Protect
     },
     {
-        .iv = TRAINER_PARTY_IVS(15, 14, 13, 14, 13, 14),
-        .ev = TRAINER_PARTY_EVS(30, 30, 20, 20, 20, 30),
-        .lvl = 13,
-        .species = SPECIES_PINSIR,
-        .moves = {MOVE_VICE_GRIP, MOVE_BIND, MOVE_FOCUS_ENERGY, MOVE_NONE}
-    },
-    {
-        .iv = TRAINER_PARTY_IVS(15, 14, 13, 14, 13, 14),
-        .ev = TRAINER_PARTY_EVS(30, 30, 20, 20, 20, 30),
-        .lvl = 13,
-        .species = SPECIES_YANMA,
-        .moves = {MOVE_SONIC_BOOM, MOVE_QUICK_ATTACK, MOVE_DOUBLE_TEAM, MOVE_NONE}
-    },
-    {
-        .iv = TRAINER_PARTY_IVS(16, 15, 14, 15, 14, 15),
-        .ev = TRAINER_PARTY_EVS(40, 40, 30, 30, 30, 40),
+        .iv = TRAINER_PARTY_IVS(16, 16, 14, 15, 14, 16),
+        .ev = TRAINER_PARTY_EVS(30, 50, 20, 20, 20, 50),
         .lvl = 13,
         .species = SPECIES_VOLBEAT,
-        .moves = {MOVE_CONFUSE_RAY, MOVE_QUICK_ATTACK, MOVE_TAIL_GLOW, MOVE_NONE}
+        .moves = {MOVE_CONFUSE_RAY, MOVE_QUICK_ATTACK, MOVE_TAIL_GLOW, MOVE_SAFEGUARD}, // TM protection
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(17, 16, 14, 15, 14, 17),
+        .ev = TRAINER_PARTY_EVS(40, 60, 20, 20, 20, 60),
+        .lvl = 13,
+        .species = SPECIES_HERACROSS,
+        .moves = {MOVE_HORN_ATTACK, MOVE_FOCUS_ENERGY, MOVE_DOUBLE_TEAM, MOVE_BRICK_BREAK}, // TM31 Brick Break
+        .heldItem = ITEM_SILVER_POWDER
     }
 };
 
