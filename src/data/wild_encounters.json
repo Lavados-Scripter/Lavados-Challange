@@ -16372,7 +16372,7 @@
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_HOOTHOOT"
+                "species": "SPECIES_RATTATA"
               },
               {
                 "min_level": 3,
@@ -16405,8 +16405,8 @@
                 "species": "SPECIES_EKANS"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
+                "min_level": 4,
+                "max_level": 4,
                 "species": "SPECIES_RATTATA"
               },
               {
@@ -16415,8 +16415,8 @@
                 "species": "SPECIES_TAILLOW"
               },
               {
-                "min_level": 4,
-                "max_level": 4,
+                "min_level": 5,
+                "max_level": 5,
                 "species": "SPECIES_RATTATA"
               },
               {
