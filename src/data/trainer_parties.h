@@ -7089,28 +7089,67 @@ static const struct TrainerMon sParty_RivalOaksLabCharmander[] = {
 
 static const struct TrainerMon sParty_RivalRoute22EarlySquirtle[] = {
     {
-        .iv = TRAINER_PARTY_IVS(8, 8, 8, 8, 8, 8),
-        .lvl = 9,
-        .species = SPECIES_PIDGEY,
-        .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_GUST, MOVE_NONE},
+        .iv = TRAINER_PARTY_IVS(9, 8, 8, 7, 7, 9),
+        .lvl = 7,
+        .species = SPECIES_MANKEY,
     },
     {
-        .iv = TRAINER_PARTY_IVS(8, 8, 8, 8, 8, 8),
+        .iv = TRAINER_PARTY_IVS(8, 8, 8, 9, 8, 8),
+        .lvl = 6,
+        .species = SPECIES_POLIWAG,
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(8, 9, 8, 8, 8, 9),
+        .lvl = 7,
+        .species = SPECIES_GROWLITHE,
+        .moves = {MOVE_EMBER, MOVE_BITE, MOVE_ROAR, MOVE_GROWL},
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(9, 8, 8, 8, 8, 9),
+        .lvl = 6,
+        .species = SPECIES_EEVEE,
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(8, 8, 8, 9, 9, 8),
+        .lvl = 6,
+        .species = SPECIES_NATU,
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(8, 8, 8, 8, 31, 31),
         .lvl = 9,
         .species = SPECIES_SQUIRTLE,
-        .moves = {MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_BUBBLE, MOVE_NONE},
     },
 };
 
 static const struct TrainerMon sParty_RivalRoute22EarlyBulbasaur[] = {
     {
-        .iv = TRAINER_PARTY_IVS(8, 8, 8, 8, 8, 8),
-        .lvl = 9,
-        .species = SPECIES_PIDGEY,
-        .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_GUST, MOVE_NONE},
+        .iv = TRAINER_PARTY_IVS(9, 8, 8, 7, 7, 9),
+        .lvl = 7,
+        .species = SPECIES_MANKEY,
     },
     {
-        .iv = TRAINER_PARTY_IVS(8, 8, 8, 8, 8, 8),
+        .iv = TRAINER_PARTY_IVS(8, 8, 8, 9, 8, 8),
+        .lvl = 6,
+        .species = SPECIES_POLIWAG,
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(8, 9, 8, 8, 8, 9),
+        .lvl = 7,
+        .species = SPECIES_GROWLITHE,
+        .moves = {MOVE_EMBER, MOVE_BITE, MOVE_ROAR, MOVE_GROWL},
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(9, 8, 8, 8, 8, 9),
+        .lvl = 6,
+        .species = SPECIES_EEVEE,
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(8, 8, 8, 9, 9, 8),
+        .lvl = 6,
+        .species = SPECIES_NATU,
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(8, 8, 8, 8, 31, 31),
         .lvl = 9,
         .species = SPECIES_BULBASAUR,
         .moves = {MOVE_TACKLE, MOVE_GROWL, MOVE_VINE_WHIP, MOVE_NONE},
@@ -7119,13 +7158,33 @@ static const struct TrainerMon sParty_RivalRoute22EarlyBulbasaur[] = {
 
 static const struct TrainerMon sParty_RivalRoute22EarlyCharmander[] = {
     {
-        .iv = TRAINER_PARTY_IVS(8, 8, 8, 8, 8, 8),
-        .lvl = 9,
-        .species = SPECIES_PIDGEY,
-        .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_GUST, MOVE_NONE},
+        .iv = TRAINER_PARTY_IVS(9, 8, 8, 7, 7, 9),
+        .lvl = 7,
+        .species = SPECIES_MANKEY,
     },
     {
-        .iv = TRAINER_PARTY_IVS(8, 8, 8, 8, 8, 8),
+        .iv = TRAINER_PARTY_IVS(8, 8, 8, 9, 8, 8),
+        .lvl = 6,
+        .species = SPECIES_POLIWAG,
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(8, 9, 8, 8, 8, 9),
+        .lvl = 7,
+        .species = SPECIES_GROWLITHE,
+        .moves = {MOVE_EMBER, MOVE_BITE, MOVE_ROAR, MOVE_GROWL},
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(9, 8, 8, 8, 8, 9),
+        .lvl = 6,
+        .species = SPECIES_EEVEE,
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(8, 8, 8, 9, 9, 8),
+        .lvl = 6,
+        .species = SPECIES_NATU,
+    },
+    {
+        .iv = TRAINER_PARTY_IVS(8, 8, 8, 8, 31, 31),
         .lvl = 9,
         .species = SPECIES_CHARMANDER,
         .moves = {MOVE_SCRATCH, MOVE_GROWL, MOVE_EMBER, MOVE_NONE},
