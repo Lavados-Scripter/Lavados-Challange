@@ -1070,7 +1070,7 @@ u8 getLevelCap(void){
         if (partyData[i].lvl > levelCap)
             levelCap = partyData[i].lvl;
     }
-    return levelCap;
+    return levelCap - 2;
 }
 
 bool8 levelCappedNuzlocke(u8 level){
