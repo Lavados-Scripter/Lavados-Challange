@@ -12,6 +12,7 @@ EventScript_SetGymTrainers::
 
 EventScript_SetPewterGymTrainers::
 	settrainerflag TRAINER_CAMPER_LIAM
+	settrainerflag TRAINER_CAMPER_ROCKY
 	return
 
 EventScript_SetCeruleanGymTrainers::

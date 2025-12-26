@@ -1,106 +1,120 @@
 PewterCity_Gym_Text_BrockIntro::
-    .string "So, you're here. I'm BROCK.\n"
-    .string "I'm PEWTER's GYM LEADER.\p"
-    .string "My rock-hard willpower is evident\n"
-    .string "even in my POKéMON.\p"
-    .string "My POKéMON are all rock hard, and\n"
-    .string "have true-grit determination.\p"
-    .string "That's right - I'm a ROCK type\n"
-    .string "specialist!\p"
-    .string "Fuhaha! You're going to challenge\n"
-    .string "me knowing that you'll lose?\p"
-    .string "That's the TRAINER's honor that\n"
-    .string "compels you to challenge me.\p"
-    .string "Fine, then!\n"
-    .string "Show me your best!{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"
+    .string "Ah, du bist also hier.\n"
+    .string "Ich bin ROCKO,\n"
+    .string "der ARENALEITER von MARMORIA CITY.\p"
+    .string "Meine Entschlossenheit ist so hart\n"
+    .string "wie der Fels selbst!\p"
+    .string "Und meine POKéMON?\n"
+    .string "Hart, standfest und unerschütterlich!\p"
+    .string "Ich bin ein Spezialist für\n"
+    .string "Gesteins-POKéMON –\n"
+    .string "und darauf bin ich stolz!\p"
+    .string "Du weißt, dass du hier\n"
+    .string "gegen eine Wand läufst…\p"
+    .string "Und trotzdem stellst du dich mir?\p"
+    .string "Hah! Genau das macht\n"
+    .string "einen echten TRAINER aus!\p"
+    .string "Dann komm!\n"
+    .string "Zeig mir, ob du stark genug bist,\n"
+    .string "um diesen Fels zu erschüttern!{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"
+
 
 @ NOTE: This defeat text actually causes a buffer overflow. It's too long for the gDisplayedStringBattle
 @ buffer that it's put into, and it stomps all over the gBattleTextBuffs after, as well as the otherwise
 @ unused array after that, sFlickerArray. Perhaps that's the reason why said array exists.
 PewterCity_Gym_Text_BrockDefeat::
-    .string "I took you for granted, and so\n"
-    .string "I lost.\p"
-    .string "As proof of your victory, I confer\n"
-    .string "on you this…the official POKéMON\l"
-    .string "LEAGUE BOULDERBADGE.\p"
-    .string "{FONT_NORMAL}{PLAYER} received the BOULDERBADGE\n"
-    .string "from BROCK!{PAUSE_MUSIC}{PLAY_BGM}{MUS_OBTAIN_BADGE}{PAUSE 0xFE}{PAUSE 0x56}{RESUME_MUSIC}\p"
-    .string "{FONT_MALE}Just having the BOULDERBADGE makes\n"
-    .string "your POKéMON more powerful.\p"
-    .string "It also enables the use of the\n"
-    .string "move FLASH outside of battle.\p"
-    .string "Of course, a POKéMON must know the\n"
-    .string "move FLASH to use it.$"
+    .string "Ich habe dich unterschätzt.\p"
+    .string "Das war mein Fehler.\p"
+    .string "Als Beweis deines Sieges\n"
+    .string "erhältst du den FELSORDEN!\p"
+    .string "{FONT_NORMAL}{PLAYER} erhält den FELSORDEN\n"
+    .string "von ROCKO!{PAUSE_MUSIC}{PLAY_BGM}{MUS_OBTAIN_BADGE}{PAUSE 0xFE}{PAUSE 0x56}{RESUME_MUSIC}\p"
+    .string "{FONT_MALE}Der FELSORDEN stärkt\n"
+    .string "die POKéMON deines Teams.\p"
+    .string "Außerdem kannst du nun\n"
+    .string "BLITZ außerhalb des Kampfes nutzen.$"
+
 
 PewterCity_Gym_Text_TakeThisWithYou::
-    .string "Wait!\n"
-    .string "Take this with you.$"
+    .string "Moment!\n"
+    .string "Nimm das hier mit.$"
 
 PewterCity_Gym_Text_ReceivedTM39FromBrock::
-    .string "{PLAYER} received TM39\n"
-    .string "from BROCK.$"
+    .string "{PLAYER} erhält TM39\n"
+    .string "von ROCKO!$"
 
 PewterCity_Gym_Text_ExplainTM39::
-    .string "A TM, Technical Machine, contains a\n"
-    .string "technique for POKéMON.\p"
-    .string "Using a TM teaches the move it\n"
-    .string "contains to a POKéMON.\p"
-    .string "A TM is good for only one use.\p"
-    .string "So, when you use one, pick the\n"
-    .string "POKéMON carefully.\p"
-    .string "Anyways…\n"
-    .string "TM39 contains ROCK TOMB.\p"
-    .string "It hurls boulders at the foe and\n"
-    .string "lowers its SPEED.$"
+    .string "Eine TM bringt POKéMON\n"
+    .string "eine neue Attacke bei.\p"
+    .string "Jede TM ist nur einmal\n"
+    .string "verwendbar.\p"
+    .string "TM39 enthält FELSENGRAB.\p"
+    .string "Sie trifft hart und senkt\n"
+    .string "die INITIATIVE des Gegners.$"
+
 
 PewterCity_Gym_Text_BrockPostBattle::
-    .string "There are all kinds of TRAINERS in\n"
-    .string "this huge world of ours.\p"
-    .string "You appear to be very gifted as a\n"
-    .string "POKéMON TRAINER.\p"
-    .string "So let me make a suggestion.\p"
-    .string "Go to the GYM in CERULEAN and test\n"
-    .string "your abilities.$"
+    .string "Die Welt ist voller\n"
+    .string "starker TRAINER.\p"
+    .string "Du hast echtes Talent.\p"
+    .string "Versuch dein Glück als\n"
+    .string "Nächstes in AZURIA CITY.$"
 
 PewterCity_Gym_Text_DontHaveRoomForThis::
-    .string "You don't have room for this.$"
+    .string "Du hast keinen Platz\n"
+    .string "mehr dafür.$"
 
 PewterCity_Gym_Text_RematchBrock::
-    .string "Since our last battle, my\n"
-    .string "ROCK POKéMON have received\l"
-    .string "extra polish!\p"
-    .string "Ready for the rematch of a lifetime?$"
+    .string "Seit unserem letzten Kampf\n"
+    .string "sind meine STEIN-POKéMON\l"
+    .string "noch härter geworden!\p"
+    .string "Bereit für eine Revanche?$"
 
 PewterCity_Gym_Text_RematchBrockDefeat::
-    .string "That was truly once in a lifetime!$"
+    .string "Ein Kampf für die Ewigkeit!$"
 
 PewterCity_Gym_Text_BrockPostRematchBattle::
-    .string "Incredible!\n"
-    .string "Your strength is unmatched!\p"
-    .string "True to your title of CHAMPION!\p"
-    .string "Continue to lead POKéMON with honor\n"
-    .string "and courage!$"
+    .string "Unglaublich!\n"
+    .string "Du bist wahrlich stark!\p"
+    .string "Ein CHAMPION, wie ihn\n"
+    .string "POKéMON verdient!$"
 
 PewterCity_Gym_Text_BrockNoRematchBattle::
-    .string "Maybe some other time.$"
+    .string "Vielleicht ein anderes Mal.$"
 
 PewterCity_Gym_Text_RematchYesBrock::
-    .string "Let's battle!$"
+    .string "Dann los!\n"
+    .string "Zeig mir deine Stärke!$"
 
 
 PewterCity_Gym_Text_LiamIntro::
-    .string "Stop right there, kid!\p"
-    .string "You're ten thousand light-years\n"
-    .string "from facing BROCK!$"
+    .string "Halt! Nicht so schnell!\p"
+    .string "Du bist noch meilenweit\n"
+    .string "davon entfernt, BROCK zu treffen!$"
 
 PewterCity_Gym_Text_LiamDefeat::
-    .string "Darn!\p"
-    .string "Light-years isn't time…\n"
-    .string "It measures distance!$"
+    .string "Mist…!\p"
+    .string "Scheinbar bist du doch stärker\n"
+    .string "als gedacht.$"
 
 PewterCity_Gym_Text_LiamPostBattle::
-    .string "You're pretty hot.\n"
-    .string "…But not as hot as BROCK!$"
+    .string "Du bist echt stark!\n"
+    .string "Aber BROCK ist noch eine Klasse drüber!$"
+
+
+PewterCity_Gym_Text_RockyIntro::
+    .string "Stopp! Wer bist du überhaupt?\p"
+    .string "Vor BROCK kommst du so leicht\n"
+    .string "nicht vorbei!$"
+
+PewterCity_Gym_Text_RockyDefeat::
+    .string "Verflixt…!\p"
+    .string "Deine Steine sind vielleicht hart,\n"
+    .string "aber du bist härter!$"
+
+PewterCity_Gym_Text_RockyPostBattle::
+    .string "Nicht schlecht, Herausforderer!\n"
+    .string "Doch BROCK wartet noch auf dich!$"
 
 PewterCity_Gym_Text_LetMeTakeYouToTheTop::
     .string "Hiya!\n"
