@@ -911,7 +911,7 @@ Text_TakeYourPkmnForFewSeconds::
 
 Text_WeHopeToSeeYouAgain::
 	.string "Komm jederzeit wieder vorbei!\n"
-	.string "Aber bitte nicht *zu* oft, ja?$"
+	.string "Aber bitte nicht ZU oft, ja?$"
 
 Text_RestoredPkmnToFullHealth::
 	.string "Danke fürs Warten!\n"
