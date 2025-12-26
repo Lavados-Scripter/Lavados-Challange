@@ -959,7 +959,12 @@ const struct Trainer gTrainers[] = {
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .trainerName = COMPOUND_STRING("RICK"),
         .doubleBattle = FALSE,
-        .trainerType = TRAINER(.items = {ITEM_SUPER_POTION, ITEM_ANTIDOTE, ITEM_BURN_HEAL}, .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,),
+        .trainerType = TRAINER(.items = {
+            ITEM_SUPER_POTION,    // heilt 50 HP
+            ITEM_FULL_RESTORE,        // heilt Poison
+            ITEM_CHESTO_BERRY,    // weckt Schlaf-Pokémon auf
+            ITEM_PECHA_BERRY      // heilt Poison (zusätzlich)
+        }, .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE),
         .party = TRAINER_PARTY(sParty_BugCatcherRick),
     },
     [TRAINER_BUG_CATCHER_DOUG] = {
@@ -968,7 +973,12 @@ const struct Trainer gTrainers[] = {
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .trainerName = COMPOUND_STRING("DOUG"),
         .doubleBattle = FALSE,
-        .trainerType = TRAINER(.items = {ITEM_SUPER_POTION, ITEM_ANTIDOTE, ITEM_BURN_HEAL}, .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,),
+        .trainerType = TRAINER(.items = {
+            ITEM_SUPER_POTION,    // heilt 50 HP
+            ITEM_FULL_RESTORE,        // heilt Poison
+            ITEM_CHESTO_BERRY,    // weckt Schlaf-Pokémon auf
+            ITEM_PECHA_BERRY      // heilt Poison (zusätzlich)
+        }, .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,),
         .party = TRAINER_PARTY(sParty_BugCatcherDoug),
     },
     [TRAINER_BUG_CATCHER_SAMMY] = {
@@ -977,7 +987,12 @@ const struct Trainer gTrainers[] = {
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .trainerName = COMPOUND_STRING("SAMMY"),
         .doubleBattle = FALSE,
-        .trainerType = TRAINER(.items = {ITEM_FULL_RESTORE, ITEM_ANTIDOTE, ITEM_X_ATTACK, ITEM_X_ATTACK}, .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,),
+        .trainerType = TRAINER(.items = {
+            ITEM_SUPER_POTION,    // heilt 50 HP
+            ITEM_CHESTO_BERRY,    // weckt Schlaf-Pokémon auf
+            ITEM_PECHA_BERRY,     // heilt Poison (zusätzlich)
+            ITEM_X_ATTACK         // Stronger
+        }, .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,),
         .party = TRAINER_PARTY(sParty_BugCatcherSammy),
     },
     [TRAINER_BUG_CATCHER_COLTON] = {
@@ -986,7 +1001,12 @@ const struct Trainer gTrainers[] = {
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .trainerName = COMPOUND_STRING("COLTON"),
         .doubleBattle = FALSE,
-        .trainerType = TRAINER(.items = {ITEM_SUPER_POTION, ITEM_SUPER_POTION}, .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,),
+        .trainerType = TRAINER(.items = {
+            ITEM_SUPER_POTION,    // heilt 50 HP
+            ITEM_FULL_RESTORE,        // heilt Poison
+            ITEM_CHESTO_BERRY,    // weckt Schlaf-Pokémon auf
+            ITEM_PECHA_BERRY      // heilt Poison (zusätzlich)
+        }, .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,),
         .party = TRAINER_PARTY(sParty_BugCatcherColton),
     },
     [TRAINER_BUG_CATCHER_GREG] = {
@@ -995,7 +1015,12 @@ const struct Trainer gTrainers[] = {
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .trainerName = COMPOUND_STRING("GREG"),
         .doubleBattle = FALSE,
-        .trainerType = TRAINER(.items = {}, .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,),
+        .trainerType = TRAINER(.items = {
+            ITEM_SUPER_POTION,    // heilt 50 HP
+            ITEM_FULL_RESTORE,
+            ITEM_CHESTO_BERRY,    // weckt Schlaf-Pokémon auf
+            ITEM_PECHA_BERRY      // heilt Poison (zusätzlich)
+        }, .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,),
         .party = TRAINER_PARTY(sParty_BugCatcherGreg),
     },
     [TRAINER_BUG_CATCHER_JAMES] = {
@@ -1004,7 +1029,12 @@ const struct Trainer gTrainers[] = {
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .trainerName = COMPOUND_STRING("JAMES"),
         .doubleBattle = FALSE,
-        .trainerType = TRAINER(.items = {}, .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,),
+        .trainerType = TRAINER(.items = {
+            ITEM_SUPER_POTION,    // heilt 50 HP
+            ITEM_FULL_RESTORE,        // heilt Poison
+            ITEM_CHESTO_BERRY,    // weckt Schlaf-Pokémon auf
+            ITEM_PECHA_BERRY      // heilt Poison (zusätzlich)
+        }, .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,),
         .party = TRAINER_PARTY(sParty_BugCatcherJames),
     },
     [TRAINER_BUG_CATCHER_KENT] = {
@@ -1013,7 +1043,12 @@ const struct Trainer gTrainers[] = {
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .trainerName = COMPOUND_STRING("KENT"),
         .doubleBattle = FALSE,
-        .trainerType = TRAINER(.items = {}, .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,),
+        .trainerType = TRAINER(.items = {
+            ITEM_SUPER_POTION,    // heilt 50 HP
+            ITEM_FULL_RESTORE,        // heilt Poison
+            ITEM_CHESTO_BERRY,    // weckt Schlaf-Pokémon auf
+            ITEM_PECHA_BERRY      // heilt Poison (zusätzlich)
+        }, .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,),
         .party = TRAINER_PARTY(sParty_BugCatcherKent),
     },
     [TRAINER_BUG_CATCHER_ROBBY] = {
@@ -1022,7 +1057,12 @@ const struct Trainer gTrainers[] = {
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .trainerName = COMPOUND_STRING("ROBBY"),
         .doubleBattle = FALSE,
-        .trainerType = TRAINER(.items = {}, .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,),
+        .trainerType = TRAINER(.items = {
+            ITEM_SUPER_POTION,    // heilt 50 HP
+            ITEM_FULL_RESTORE,        // heilt Poison
+            ITEM_CHESTO_BERRY,    // weckt Schlaf-Pokémon auf
+            ITEM_PECHA_BERRY      // heilt Poison (zusätzlich)
+        }, .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,),
         .party = TRAINER_PARTY(sParty_BugCatcherRobby),
     },
     [TRAINER_BUG_CATCHER_CALE] = {
@@ -5161,8 +5201,12 @@ const struct Trainer gTrainers[] = {
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .trainerName = COMPOUND_STRING("ANTHONY"),
         .doubleBattle = FALSE,
-        .trainerType = TRAINER(.items = {ITEM_SUPER_POTION, ITEM_SUPER_POTION, ITEM_ANTIDOTE, ITEM_BURN_HEAL},
-                               .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY),
+        .trainerType = TRAINER(.items = {
+            ITEM_SUPER_POTION,    // heilt 50 HP
+            ITEM_FULL_RESTORE,        // heilt Poison
+            ITEM_CHESTO_BERRY,    // weckt Schlaf-Pokémon auf
+            ITEM_PECHA_BERRY      // heilt Poison (zusätzlich)
+        }, .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,),
         .party = TRAINER_PARTY(sParty_BugCatcherAnthony),
     },
     [TRAINER_BUG_CATCHER_CHARLIE] = {
@@ -5171,8 +5215,12 @@ const struct Trainer gTrainers[] = {
         .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .trainerName = COMPOUND_STRING("CHARLIE"),
         .doubleBattle = FALSE,
-        .trainerType = TRAINER(.items = {ITEM_SUPER_POTION, ITEM_ANTIDOTE, ITEM_BURN_HEAL, ITEM_X_ATTACK},
-                               .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY),
+        .trainerType = TRAINER(.items = {
+            ITEM_SUPER_POTION,    // heilt 50 HP
+            ITEM_FULL_RESTORE,        // heilt Poison
+            ITEM_CHESTO_BERRY,    // weckt Schlaf-Pokémon auf
+            ITEM_PECHA_BERRY      // heilt Poison (zusätzlich)
+        }, .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,),
         .party = TRAINER_PARTY(sParty_BugCatcherCharlie),
     },
     [TRAINER_TWINS_ELI_ANNE_2] = {
